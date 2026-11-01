@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Ask a question
+    url: https://discord.gg/AJ5BUZSV65
+    about: Get help and share ideas with the team and other builders on Discord.
+  - name: Report a translation problem
+    url: https://github.com/superdoteng/translations/issues/new?template=untranslated.yml
+    about: Missing or incorrect interface text belongs in the translations repository.
+  - name: Share logs privately
+    url: https://github.com/superdoteng/super.engineering/blob/main/SECURITY.md
+    about: Email logs or screenshots that shouldn't be public.

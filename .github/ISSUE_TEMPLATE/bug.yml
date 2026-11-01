@@ -1,0 +1,50 @@
+name: Report a bug
+description: Something in super.engineering isn't working.
+type: Bug
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: >-
+        [Search existing issues](https://github.com/superdoteng/super.engineering/issues?q=is%3Aissue)
+        first. If one matches, add your details there. Write in any language.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What did you expect, and what happened instead?
+      placeholder: I split the view and the chat pane went blank. I expected the conversation to stay visible.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: If you know how to make it happen again, list the steps.
+      placeholder: |
+        1. Open a worktree
+        2. Start a chat with an agent
+        3. ...
+  - type: input
+    id: app-version
+    attributes:
+      label: App version
+      description: Open About super.engineering, click Copy, and paste the result here.
+  - type: input
+    id: operating-system
+    attributes:
+      label: Operating system
+      placeholder: macOS 26.1 or Ubuntu 24.04
+  - type: input
+    id: coding-agent
+    attributes:
+      label: Coding agent
+      description: Which agent and model were involved, if any?
+      placeholder: Claude Code, Codex, Cursor
+  - type: textarea
+    id: attachments
+    attributes:
+      label: Screenshots or logs
+      description: >-
+        Drag files here. Check them for private information first. To share logs
+        privately, email humans@super.engineering.

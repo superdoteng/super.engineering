@@ -1,0 +1,31 @@
+name: Suggest a feature
+description: Tell us what you want to do with super.engineering.
+type: Feature
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: >-
+        [Search existing requests](https://github.com/superdoteng/super.engineering/issues?q=is%3Aissue%20label%3Aenhancement)
+        first and add a 👍 to the ones you want. Write in any language.
+  - type: textarea
+    id: goal
+    attributes:
+      label: What are you trying to do?
+      description: Describe the task and the result you need.
+      placeholder: I run several agents on the same task and want to compare their changes side by side before I merge one.
+    validations:
+      required: true
+  - type: textarea
+    id: today
+    attributes:
+      label: How do you handle it today?
+      description: Your current workaround, if you have one.
+      placeholder: I open each worktree's diff in a separate window.
+  - type: textarea
+    id: ideas
+    attributes:
+      label: Ideas or examples
+      description: >-
+        Mockups, screenshots, or apps that do this well. Check images for private
+        information first.
