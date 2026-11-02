@@ -25,16 +25,23 @@ body:
         1. Open a worktree
         2. Start a chat with an agent
         3. ...
-  - type: input
+  # Keeps the id of the old "App version" field so older apps' prefilled
+  # links still land in it.
+  - type: textarea
     id: app-version
     attributes:
-      label: App version
-      description: Open About super.engineering, click Copy, and paste the result here.
-  - type: input
-    id: operating-system
-    attributes:
-      label: Operating system
-      placeholder: macOS 26.1 or Ubuntu 24.04
+      label: Version and system
+      description: >-
+        Open About super.engineering, click Copy, and paste the result here. If
+        the app won't open, write your OS and CPU type. Write "unknown" for
+        anything you can't find.
+      placeholder: |
+        super.engineering
+        Version 1.8.2
+        OS: Ubuntu 24.04.1 LTS (x86_64)
+      render: text
+    validations:
+      required: true
   - type: input
     id: coding-agent
     attributes:
