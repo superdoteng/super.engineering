@@ -89,7 +89,7 @@ The task and the result the user needs.
 
 Write a specific title that names the symptom or goal, such as
 `Chat pane goes blank after splitting the view`. Do not add prefixes like `[Bug]`;
-the issue type and label already classify it.
+the issue type already classifies it.
 
 ## Privacy and authorization
 
@@ -151,19 +151,19 @@ has received the separate approval described above, submit the reviewed file. Re
 the file path and title with the reviewed values. For a bug:
 
 ```sh
-gh issue create --repo superdoteng/super.engineering --type Bug --label bug \
+gh issue create --repo superdoteng/super.engineering --type Bug \
   --title 'Reviewed bug title' --body-file /absolute/path/to/reviewed-report.md
 ```
 
 For a feature request:
 
 ```sh
-gh issue create --repo superdoteng/super.engineering --type Feature --label enhancement \
+gh issue create --repo superdoteng/super.engineering --type Feature \
   --title 'Reviewed feature title' --body-file /absolute/path/to/reviewed-report.md
 ```
 
 Use only the appropriate command. Return the created issue URL to the user. Do not
-submit test issues. If `--type` or `--label` is rejected because of permissions,
-submit the same reviewed file without them and tell the user. If anything else fails,
+submit test issues. If `--type` is rejected because of permissions,
+submit the same reviewed file without it and tell the user. If anything else fails,
 keep the draft and report the failure; never change the destination or skip the
 privacy review.
