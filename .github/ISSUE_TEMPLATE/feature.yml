@@ -1,12 +1,11 @@
 name: Suggest a feature
 description: Tell us what you want to do with super.engineering.
 type: Feature
-labels: [enhancement]
 body:
   - type: markdown
     attributes:
       value: >-
-        [Search existing requests](https://github.com/superdoteng/super.engineering/issues?q=is%3Aissue%20label%3Aenhancement)
+        [Search existing requests](https://github.com/superdoteng/super.engineering/issues?q=is%3Aissue%20type%3AFeature)
         first and add a 👍 to the ones you want. Write in any language.
   - type: textarea
     id: goal
