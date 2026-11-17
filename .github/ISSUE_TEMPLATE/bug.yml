@@ -1,7 +1,6 @@
 name: Report a bug
 description: Something in super.engineering isn't working.
 type: Bug
-labels: [bug]
 body:
   - type: markdown
     attributes:
